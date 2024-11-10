@@ -25,6 +25,7 @@ public class Juego {
 				if(i==25) {
 					j++;
 				}
+				contenido.close();
 			}			
 		}catch(Exception e) {
 			System.out.println("Error al leer");
@@ -41,6 +42,7 @@ public class Juego {
 				if(i==99) {
 					j++;
 				}
+				contenido.close();
 			}			
 		}catch(Exception e) {
 			System.out.println("Error al leer");
