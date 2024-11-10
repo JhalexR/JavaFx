@@ -14,6 +14,7 @@ public class Inicio extends Juego {
 			}
 			System.out.println();
 		}	
+		
 		System.out.print("Presione 'enter' para continuar");
 		scanner.next().charAt(0);
 		scanner.close();
