@@ -8,32 +8,33 @@ public class Jugador extends Juego {
 	
 	protected int puntaje;
 	protected String codigoMorse;
+	protected boolean juegoActivo;
 
 	public void jugar () {
 		
 		Jugador jugador1 = new Jugador();
 		jugador1.segundos = 60;
+		juegoActivo = true;
 		puntaje = 0;
 		codigoMorse ="";
-		conteoRegresivo ();		
+		conteoRegresivo (jugador1.segundos);		
 	}
 	
-	public void conteoRegresivo () {
+	public void conteoRegresivo (int tempo) {
 		
-		Jugador jugador1 = new Jugador();
-		jugador1.segundos = 60;
-				
-	       new Thread(() -> {
-	            while (jugador1.segundos > 0) {
-	                try {
-	                    Thread.sleep(1000);  // Esperar 1 segundo
-	                    jugador1.segundos--;
-	                } catch (InterruptedException e) {
-	                    e.printStackTrace();
-	                }
-	            }
-	            finalizarJuego();
-	        }).jugar();
+        Timer temporizador = new Timer();
+        temporizador.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                // Cuando el temporizador llega a 0, el juego termina
+                juegoActivo = false;
+                System.out.println("\n¡Tiempo agotado!");
+                temporizador.cancel();
+            }
+        }, tempo * 1000);
+
 	}
+	
+	
 
 }

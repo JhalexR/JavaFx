@@ -45,6 +45,9 @@ public class Inicio extends Juego {
 		partida.MostrartablaLetras();
 		partida.MostrarInstrucciones();
 		
+		Jugador partida2 = new Jugador();
+		
+		partida2.jugar();
 		
 	}
 }
