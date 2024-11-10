@@ -1,6 +1,5 @@
 package model;
 
-
 public class Juego {
 	
 	protected String tablaLetras[][];
@@ -9,8 +8,7 @@ public class Juego {
 	
 	public void juego () {
 		
-		segundos = 60;
-		
+				
 		tablaLetras[0][0]="A";
 		tablaLetras[1][0]="B";
 		tablaLetras[2][0]="C";
@@ -63,7 +61,7 @@ public class Juego {
 		tablaLetras[23][1]="−··−";
 		tablaLetras[24][1]="−·−−";
 		tablaLetras[25][1]="−−··";
-		
+				
 		tablaPalabras[1][0]="JUEGO";
 		tablaPalabras[2][0]="USARA";
 		tablaPalabras[3][0]="AMOR";
