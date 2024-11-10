@@ -8,7 +8,7 @@ public class Inicio extends Juego {
 		
 		Scanner scanner = new Scanner(System.in);		
 		
-		for(int i=0; i<52; i++) {
+		for(int i=0; i<26; i++) {
 			for(int j=0; j<2; j++) {
 				System.out.print(tablaLetras[i][j]+" ");
 			}
@@ -41,7 +41,8 @@ public class Inicio extends Juego {
 	public static void main(String[] args) {
 				
 		Inicio partida = new Inicio();
-				
+		
+		partida.llenarTablas();
 		partida.MostrartablaLetras();
 		partida.MostrarInstrucciones();
 		
