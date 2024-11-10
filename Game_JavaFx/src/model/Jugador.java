@@ -9,10 +9,9 @@ public class Jugador extends Juego {
 	protected int puntaje;
 	protected String codigoMorse;
 	protected boolean juegoActivo;	
-	Jugador jugador1 = new Jugador();
-	Scanner scanner = new Scanner(System.in);
 
-	public void jugar () {				
+	public void jugar () {	
+		Jugador jugador1 = new Jugador();
 		jugador1.segundos = 60;
 		juegoActivo = true;
 		puntaje = 0;
@@ -36,10 +35,13 @@ public class Jugador extends Juego {
 	}
 	
 	public void iniciarPartida () {		
+		Juego jugadorA = new Juego();
 		while (juegoActivo) {			
 			int posicion = obtenerPosicionAleatoria();
-			System.out.println(jugador1.tablaPalabras[posicion][0]);
-			codigoMorse = capturarCodigoMorse ();
+			System.out.println(posicion);
+			int a = 0;
+			System.out.println(jugadorA.tablaPalabras[posicion][a]);
+			codigoMorse = capturarCodigoMorse();
 			if(compararCodigos(codigoMorse, posicion)) {
 				puntaje = puntaje+10;
 			}
@@ -54,11 +56,13 @@ public class Jugador extends Juego {
 	
 	
 	public String capturarCodigoMorse () {		
+		Scanner scanner = new Scanner(System.in);
 		System.out.print("Escriba el codigo Morse de la palabra: ");
 		return scanner.nextLine();		
 	}
 	
 	public boolean compararCodigos (String codigo, int fila) {
+		Jugador jugador1 = new Jugador();
 		return  jugador1.tablaPalabras[fila][0].equalsIgnoreCase(codigo);
 	}
 

@@ -266,9 +266,6 @@ public class Juego {
 		tablaPalabras[97][1]="−····−·−··−−−−·";
 		tablaPalabras[98][1]="·−−−·−−−−−";
 		tablaPalabras[99][1]="−·−··−····−";
-
-
-
 	
 	}
 	
