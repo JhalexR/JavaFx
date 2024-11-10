@@ -2,13 +2,17 @@ package model;
 
 public class Juego {
 	
-	protected String tablaLetras[][];
-	protected String tablaPalabras[][];
+	protected String [][] tablaLetras;
+	protected String [][] tablaPalabras;
 	protected int segundos;
 	
 	public void juego () {
 		
-				
+		segundos = 60;
+		
+		tablaLetras = new String [26][2];
+		tablaPalabras = new String [100][2];
+		
 		tablaLetras[0][0]="A";
 		tablaLetras[1][0]="B";
 		tablaLetras[2][0]="C";
@@ -61,7 +65,7 @@ public class Juego {
 		tablaLetras[23][1]="−··−";
 		tablaLetras[24][1]="−·−−";
 		tablaLetras[25][1]="−−··";
-				
+		
 		tablaPalabras[1][0]="JUEGO";
 		tablaPalabras[2][0]="USARA";
 		tablaPalabras[3][0]="AMOR";
@@ -261,7 +265,8 @@ public class Juego {
 		tablaPalabras[97][1]="−−·−·−··";
 		tablaPalabras[98][1]="−····−·−··−−−−·";
 		tablaPalabras[99][1]="·−−−·−−−−−";
-		tablaPalabras[100][1]="−·−··−····−";		
-		
-	}	
+		tablaPalabras[100][1]="−·−··−····−";
+	
+	}
+	
 }

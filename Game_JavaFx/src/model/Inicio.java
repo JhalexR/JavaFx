@@ -6,11 +6,11 @@ public class Inicio extends Juego {
 	
 	public void MostrartablaLetras () {
 		
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);		
 		
 		for(int i=0; i<52; i++) {
 			for(int j=0; j<2; j++) {
-				System.out.print(tablaLetras [i][j]+" ");
+				System.out.print(tablaLetras[i][j]+" ");
 			}
 			System.out.println();
 		}	
@@ -41,7 +41,7 @@ public class Inicio extends Juego {
 	public static void main(String[] args) {
 				
 		Inicio partida = new Inicio();
-		
+				
 		partida.MostrartablaLetras();
 		partida.MostrarInstrucciones();
 		
