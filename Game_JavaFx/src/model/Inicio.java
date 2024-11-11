@@ -1,5 +1,14 @@
 package model;
 
+/*
+  Autor: John Alexander Peñaloza Rojas
+  Institución Universitaria Politécnico Grancolombiano 
+  Modulo: Paradigmas de programación - Segundo semestre 2024
+  Grupo: B01 - subgrupo: 19
+  fecha: 11/11/2024
+ 
+*/
+
 public class Inicio extends Juego {
 	
 	protected static String [][] letras;
