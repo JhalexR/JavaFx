@@ -10,11 +10,11 @@ public class Inicio extends Juego {
 		Juego juego1 = new Juego();
 		juego1.iniciar();
 		
-		letras = new String [26][2];
+		letras = new String [27][2];
 		palabras = new String [100][2];
 		
 		for(int j=0; j<2; j++) {
-			for(int i=0; i<26; i++) {
+			for(int i=0; i<27; i++) {
 				letras[i][j] = juego1.tablaLetras[i][j];
 			}
 		}

@@ -19,11 +19,11 @@ public class Jugador extends Inicio {
 		puntaje = 0;
 		codigoMorse ="";			
 		juegoActivo = true;
-		listaLetras = new String [26][2];
+		listaLetras = new String [27][2];
 		listaPalabras = new String [100][2];
 		
 		for(int j=0; j<2; j++) {
-			for(int i=0; i<26; i++) {
+			for(int i=0; i<27; i++) {
 				listaLetras[i][j] = letrasM[i][j];
 			}
 		}
@@ -41,7 +41,7 @@ public class Jugador extends Inicio {
 	}
 	
 	public void mostrartablaLetras () {			
-		for(int i=0; i<26; i++) {
+		for(int i=0; i<27; i++) {
 			for(int j=0; j<2; j++) {
 				System.out.print(listaLetras[i][j]+" ");
 			}

@@ -13,7 +13,7 @@ public class Juego {
 	}
 	
 	public void llenarTablaLetras () {
-		tablaLetras = new String [26][2];
+		tablaLetras = new String [27][2];
 				
 		tablaLetras[0][0]="A";
 		tablaLetras[1][0]="B";
@@ -36,11 +36,12 @@ public class Juego {
 		tablaLetras[18][0]="R";
 		tablaLetras[19][0]="S";
 		tablaLetras[20][0]="T";
-		tablaLetras[21][0]="V";
-		tablaLetras[22][0]="W";
-		tablaLetras[23][0]="X";
-		tablaLetras[24][0]="Y";
-		tablaLetras[25][0]="Z";
+		tablaLetras[21][0]="U";
+		tablaLetras[22][0]="V";
+		tablaLetras[23][0]="W";
+		tablaLetras[24][0]="X";
+		tablaLetras[25][0]="Y";
+		tablaLetras[26][0]="Z";
 		tablaLetras[0][1]=".-";
 		tablaLetras[1][1]="-...";
 		tablaLetras[2][1]="-.-.";
@@ -62,12 +63,12 @@ public class Juego {
 		tablaLetras[18][1]=".-.";
 		tablaLetras[19][1]="...";
 		tablaLetras[20][1]="-";
-		tablaLetras[21][1]="...-";
-		tablaLetras[22][1]=".--";
-		tablaLetras[23][1]="-..-";
-		tablaLetras[24][1]="-.--";
-		tablaLetras[25][1]="--..";
-
+		tablaLetras[21][1]="..-";
+		tablaLetras[22][1]="...-";
+		tablaLetras[23][1]=".--";
+		tablaLetras[24][1]="-..-";
+		tablaLetras[25][1]="-.--";
+		tablaLetras[26][1]="--..";
 		
 	}
 		
@@ -274,8 +275,6 @@ public class Juego {
 		tablaPalabras[97][1]="-....-.-..----.";
 		tablaPalabras[98][1]=".---.-----";
 		tablaPalabras[99][1]="-.-..-....-";
-
-
 	
 	}
 }
