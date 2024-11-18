@@ -20,14 +20,13 @@ public class Jugador extends Inicio {
 		
 	Scanner scanner = new Scanner(System.in);
 	
-    /**
-     Método principal referente para el jugador.
-     Carga las listas de letras y palabras, 
-     comienza la partida mostrando las reglas iniciales
-     @param letrasM Matriz con las letras y sus códigos Morse.
-     @param palabrasM Matriz con las palabras y sus códigos Morse.
-    */
-	public void jugar (String letrasM[][], String palabrasM[][]) {	
+	/*
+	  Método Constructor de la clase Jugador.
+	  Inicializa los atributos segundos, el puntaje, el codigo morse y las listas de letras y palabras.
+	  @param letrasM Matriz con las letras y sus códigos Morse.
+      @param palabrasM Matriz con las palabras y sus códigos Morse.
+	 */
+	public Jugador (String letrasM[][], String palabrasM[][]) {	
 		segundos = 60;
 		puntaje = 0;
 		codigoMorse ="";			
@@ -46,7 +45,15 @@ public class Jugador extends Inicio {
 				listaPalabras[i][j] = palabrasM[i][j];
 			}
 		}
-		
+	}
+	
+    /*
+      Método principal referente al jugador.
+      comienza la partida:
+      Muestra la tabla de letras y su codigo morse
+      Inicia el conteo regresivo de 60 segundos
+   */
+	public void jugar (String letrasM[][], String palabrasM[][]) {		
 		mostrartablaLetras();
 		iniciarConteoRegresivo (segundos);	
 		iniciarPartida ();		
