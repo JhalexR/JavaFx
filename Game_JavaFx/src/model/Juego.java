@@ -1,17 +1,30 @@
 package model;
 
+/**
+La clase Juego representa la base del juego.
+Inicializa las tablas de letras y palabras y sus respectivas traducciones a código Morse 
+que son esenciales para la dinámica de juego.
+*/
 public class Juego {
 	
 	protected String [][] tablaLetras;
 	protected String [][] tablaPalabras;
 	protected int segundos;
 	
+    /**
+    Método para inicializar el juego. 
+    Configura el tiempo inicial y llena las tablas de letras y palabras.
+   */
 	public void iniciar () {
 		segundos = 60;
 		llenarTablaLetras ();
 		llenarTablaPalabras ();
 	}
 	
+    /**
+    Método que llena la tabla de letras con cada letra del alfabeto español 
+    y su traducción correspondiente en código Morse.
+   */
 	public void llenarTablaLetras () {
 		tablaLetras = new String [27][2];
 				
@@ -71,7 +84,11 @@ public class Juego {
 		tablaLetras[26][1]="--..";
 		
 	}
-		
+	
+    /**
+     Método que llena la tabla de palabras con una lista de palabras 
+     cortas y comunes con sus respectivas traducciones al código Morse.
+    */
 	public void llenarTablaPalabras () {
 		tablaPalabras = new String [100][2];
 		

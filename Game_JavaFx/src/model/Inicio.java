@@ -9,11 +9,22 @@ package model;
  
 */
 
+/**
+  Clase Inicio que hereda de la clase Juego.
+  Esta clase inicializa las tablas de letras y palabras desde la clase Juego
+  y muestra las instrucciones del juego. 
+  Actúa como el punto de entrada principal del programa.
+*/
 public class Inicio extends Juego {
 	
 	protected static String [][] letras;
 	protected static String [][] palabras;
 	
+    /**
+      Constructor de la clase Inicio.
+      Inicializa las tablas de letras y palabras copiando los datos de
+      la clase Juego después de llamarlo mediante su método iniciar().
+   */
 	public Inicio(){
 		
 		Juego juego1 = new Juego();
@@ -35,6 +46,10 @@ public class Inicio extends Juego {
 		}
 	}	
 	
+    /**
+      Método para mostrar las instrucciones del juego al usuario.
+      Explicación básica de como jugar.
+    */
 	public void MostrarInstrucciones () {				
 		System.out.println("El juego consiste en digitar el Codigo Morse de la palabra ");
 		System.out.println("que aparece en el centro, usando como guia la tabla con la traduccion");
@@ -43,6 +58,11 @@ public class Inicio extends Juego {
 		System.out.println("se debe presionar (enter) para pasar a la siguiente palabra ");				
 	}
 	
+    /**
+     Método principal del programa.
+     Inicia una partida del juego, muestra las instrucciones.
+     @param args Argumentos de la línea de comandos (no utilizados en este programa).
+    */
 	public static void main(String[] args) {	
 		Inicio partida = new Inicio();		
 		partida.MostrarInstrucciones();		
