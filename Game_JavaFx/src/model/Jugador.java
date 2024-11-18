@@ -49,8 +49,7 @@ public class Jugador extends Inicio {
 	
     /*
       Método principal referente al jugador.
-      comienza la partida:
-      Muestra la tabla de letras y su codigo morse
+      comienza la partida: Muestra la tabla de letras y su codigo morse
       Inicia el conteo regresivo de 60 segundos
    */
 	public void jugar () {		
