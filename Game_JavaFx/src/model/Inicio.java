@@ -10,10 +10,10 @@ package model;
 */
 
 /**
-  Clase Inicio que hereda de la clase Juego.
-  Esta clase inicializa las tablas de letras y palabras desde la clase Juego
-  y muestra las instrucciones del juego. 
-  Actua como el punto de entrada principal del programa.
+  * Clase Inicio que hereda de la clase Juego.
+  * Esta clase inicializa las tablas de letras y palabras desde la clase Juego
+  * y muestra las instrucciones del juego. 
+  * Actua como el punto de entrada principal del programa.
 */
 public class Inicio extends Juego {
 	
