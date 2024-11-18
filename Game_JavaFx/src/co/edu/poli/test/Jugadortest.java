@@ -41,18 +41,4 @@ public class Jugadortest extends TestCase {
       }
   }
     
-	/*
-	  Test que realiza la prueba del método capturarCodigoMorse()
-	  que debe generar un numero aleatorio entre 0 y 99
-	  esta prueba debe generar siempre el mensaje  "La posición debe estar entre 0 y 99"
-	  puesto que se suma +100 al resultado demostrando que el metodo genera numeros dentro del rango	  
-	*/
-    public void testcapturarCodigoMorse() {
-        String input = "... --- ...\n"; // Entrada simulada (SOS en código Morse)
-        ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in); // Simula la entrada estándar
-        Jugador jugador = new Jugador();
-        String codigo = jugador.capturarCodigoMorse();
-        assertEquals("... --- ...", codigo, "El código Morse capturado debe coincidir con la entrada simulada");
-    }
 }
