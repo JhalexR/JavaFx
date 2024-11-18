@@ -15,8 +15,8 @@ public class Jugador extends Inicio {
 	protected int puntaje;
 	protected String codigoMorse;
 	protected boolean juegoActivo;
-	protected static String [][] listaLetras; 
-	protected static String [][] listaPalabras; 
+	public String [][] listaLetras; 
+	public String [][] listaPalabras; 
 		
 	Scanner scanner = new Scanner(System.in);
 	
