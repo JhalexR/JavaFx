@@ -7,12 +7,12 @@ import model.Jugador;
 	Clase que realiza las pruebas unitarias para los metodos:
 	* obtenerPosicionAleatoria ();
 	* compararCodigos (String, int);
-	Debido a que son dos de los tres métodos con retorno de valores  
+	Debido a que son dos de los tres metodos con retorno de valores  
 */
 public class Jugadortest extends TestCase {
 	
 	/*
-	  Test que realiza la prueba del método ObtenerPosicionAleatoria ();
+	  Test que realiza la prueba del metodo obtenerPosicionAleatoria ();
 	  el resultado debe ser igual al esperado para considerar 
 	  que el metodo funciona correctamente 
 	*/    
@@ -27,7 +27,7 @@ public class Jugadortest extends TestCase {
     }
     
 	/*
-	  Test que realiza la prueba del método ObtenerPosicionAleatoria
+	  Test que realiza la prueba del metodo obtenerPosicionAleatoria
 	  el resultado debe ser diferente al esperado para considerar 
 	  que el metodo funciona correctamente	  
 	*/
@@ -42,7 +42,7 @@ public class Jugadortest extends TestCase {
     }
     
 	/*
-	  Test que realiza la prueba del método CompararCodigos
+	  Test que realiza la prueba del metodo compararCodigos
 	  el resultado debe ser igual al esperado para considerar 
 	  que el metodo funciona correctamente 
 	*/
@@ -74,7 +74,7 @@ public class Jugadortest extends TestCase {
    }
     
 	/*
-	  Test que realiza la prueba del método CompararCodigos
+	  Test que realiza la prueba del metodo compararCodigos
 	  el resultado debe ser diferente al esperado para considerar 
 	  que el metodo funciona correctamente 
 	*/
