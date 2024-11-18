@@ -6,10 +6,10 @@ import java.util.TimerTask;
 import java.util.Random;
 
 /**
-  Clase Jugador: Es la lógica del jugador dentro del juego.
+  Clase Jugador: Es la logica del jugador dentro del juego.
   Clase extendida de la clase Inicio.
-  Da inicio a la partida con la traducción de palabras a 
-  código Morse y maneja el puntaje.
+  Da inicio a la partida con la traduccion de palabras a 
+  codigo Morse y maneja el puntaje.
 */
 public class Jugador extends Inicio {	
 	protected int puntaje;
@@ -21,10 +21,10 @@ public class Jugador extends Inicio {
 	Scanner scanner = new Scanner(System.in);
 	
 	/*
-	  Método Constructor de la clase Jugador.
+	  Metodo Constructor de la clase Jugador.
 	  Inicializa los atributos segundos, el puntaje, el codigo morse y las listas de letras y palabras.
-	  @param letrasM Matriz con las letras y sus códigos Morse.
-      @param palabrasM Matriz con las palabras y sus códigos Morse.
+	  @param letrasM Matriz con las letras y sus codigos Morse.
+      @param palabrasM Matriz con las palabras y sus codigos Morse.
 	 */
 	public Jugador (String letrasM[][], String palabrasM[][]) {	
 		segundos = 60;
@@ -48,7 +48,7 @@ public class Jugador extends Inicio {
 	}
 	
     /*
-      Método principal referente al jugador.
+      Metodo principal referente al jugador.
       comienza la partida: Muestra la tabla de letras y su codigo morse
       Inicia el conteo regresivo de 60 segundos
    */
@@ -60,7 +60,7 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-     Método que muestra la tabla de letras y su traducción a código Morse.
+     Metodo que muestra la tabla de letras y su traduccion a codigo Morse.
     */
 	public void mostrartablaLetras () {			
 		for(int i=0; i<27; i++) {
@@ -73,9 +73,9 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-      Método que inicia un conteo regresivo desde 60.
-      Cuando el tiempo se agota, el juego finaliza automáticamente.
-      @param tempo Tiempo límite en segundos.
+      Metodo que inicia un conteo regresivo desde 60.
+      Cuando el tiempo se agota, el juego finaliza automaticamente.
+      @param tempo Tiempo limite en segundos.
     */
 	public void iniciarConteoRegresivo (int tempo) {	
 		
@@ -93,9 +93,9 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-      Método con la lógica de la partida. 
+      Metodo con la logica de la partida. 
       Presenta palabras aleatorias de la lista al jugador,
-      evalúa las respuestas y actualiza el puntaje.
+      evalua las respuestas y actualiza el puntaje.
     */
 	public void iniciarPartida () {	
 		while (juegoActivo) {			
@@ -116,8 +116,8 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-     Método que obtiene una posición aleatoria dentro de la lista de palabras.
-     @return Un número entero que representa la posición aleatoria.
+     Metodo que obtiene una posicion aleatoria dentro de la lista de palabras.
+     @return Un numero entero que representa la posicion aleatoria.
     */
 	public int obtenerPosicionAleatoria () {		
 		Random random = new Random();
@@ -125,8 +125,8 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-     Método que captura el código Morse ingresado por el jugador.
-     @return Una cadena de caracteres con el código ingresado por el jugador.
+     Metodo que captura el codigo Morse ingresado por el jugador.
+     @return Una cadena de caracteres con el codigo ingresado por el jugador.
     */
 	public String capturarCodigoMorse () {	
 		System.out.println("Escriba el codigo Morse de la palabra:");
@@ -134,17 +134,17 @@ public class Jugador extends Inicio {
 	}
 	
     /**
-      Método que compara el código Morse ingresado por el jugador con el código esperado.
-      @param codigo Código Morse ingresado por el jugador.
-      @param fila Fila de la la lista de palabras donde está la palabra actual.
-      @return True si el código coincide, False si el código No coincide.
+      Metodo que compara el codigo Morse ingresado por el jugador con el codigo esperado.
+      @param codigo Codigo Morse ingresado por el jugador.
+      @param fila Fila de la la lista de palabras donde esta la palabra actual.
+      @return True si el codigo coincide, False si el codigo No coincide.
     */
 	public boolean compararCodigos (String codigo, int fila) {
 		return  listaPalabras[fila][1].equalsIgnoreCase(codigo);
 	}
 	
     /**
-     Método que finaliza la partida de juego y muestra el puntaje final.
+     Metodo que finaliza la partida de juego y muestra el puntaje final.
     */
 	public void finalizarPartida () {
 		System.out.println("\n¡Su puntaje fue de!\n");
