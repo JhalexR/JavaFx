@@ -38,5 +38,10 @@ public class Jugadortest extends TestCase {
             int posicion = jugador.obtenerPosicionAleatoria()+100;
             assertTrue("La posición debe estar entre 0 y 99", posicion >= 0 && posicion < 100);
       }
-  }    
+  }
+    
+    public void testcompararCodigos() {
+    	Jugador.jugar();
+    }
+    
 }

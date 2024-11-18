@@ -53,7 +53,7 @@ public class Jugador extends Inicio {
       Muestra la tabla de letras y su codigo morse
       Inicia el conteo regresivo de 60 segundos
    */
-	public void jugar (String letrasM[][], String palabrasM[][]) {		
+	public void jugar () {		
 		mostrartablaLetras();
 		iniciarConteoRegresivo (segundos);	
 		iniciarPartida ();		

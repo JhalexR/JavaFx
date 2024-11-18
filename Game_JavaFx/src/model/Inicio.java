@@ -67,7 +67,7 @@ public class Inicio extends Juego {
 		Inicio partida = new Inicio();		
 		partida.MostrarInstrucciones();		
 
-		Jugador Jugador1 = new Jugador();
-		Jugador1.jugar(letras, palabras);		
+		Jugador Jugador1 = new Jugador(letras, palabras);
+		Jugador1.jugar();		
 	}
 }
