@@ -21,7 +21,7 @@ public class Inicio extends Juego {
 	protected static String [][] palabras;
 	
     /**
-      Constructor de la clase Inicio.
+      Método Constructor de la clase Inicio.
       Inicializa las tablas de letras y palabras copiando los datos de
       la clase Juego después de llamarlo mediante su método iniciar().
    */
