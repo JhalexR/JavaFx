@@ -1,9 +1,9 @@
 package model;
 
 /*
-  Autor: John Alexander Peñaloza Rojas
-  Institución Universitaria Politécnico Grancolombiano 
-  Modulo: Paradigmas de programación - Segundo semestre 2024
+  Autor: John Alexander Penaloza Rojas
+  Institucion Universitaria Politecnico Grancolombiano 
+  Modulo: Paradigmas de programacion - Segundo semestre 2024
   Grupo: B01 - subgrupo: 19
   fecha: 11/11/2024
  
@@ -13,7 +13,7 @@ package model;
   Clase Inicio que hereda de la clase Juego.
   Esta clase inicializa las tablas de letras y palabras desde la clase Juego
   y muestra las instrucciones del juego. 
-  Actúa como el punto de entrada principal del programa.
+  Actua como el punto de entrada principal del programa.
 */
 public class Inicio extends Juego {
 	
@@ -21,9 +21,9 @@ public class Inicio extends Juego {
 	protected static String [][] palabras;
 	
     /**
-      Método Constructor de la clase Inicio.
+      Metodo Constructor de la clase Inicio.
       Inicializa las tablas de letras y palabras copiando los datos de
-      la clase Juego después de llamarlo mediante su método iniciar().
+      la clase Juego despues de llamarlo mediante su metodo iniciar().
    */
 	public Inicio(){
 		
@@ -47,8 +47,8 @@ public class Inicio extends Juego {
 	}	
 	
     /**
-      Método para mostrar las instrucciones del juego al usuario.
-      Explicación básica de como jugar.
+      Metodo para mostrar las instrucciones del juego al usuario.
+      Explicacion basica de como jugar.
     */
 	public void MostrarInstrucciones () {				
 		System.out.println("El juego consiste en digitar el Codigo Morse de la palabra ");
@@ -59,9 +59,9 @@ public class Inicio extends Juego {
 	}
 	
     /**
-     Método principal del programa.
+     Metodo principal del programa.
      Inicia una partida del juego, muestra las instrucciones.
-     @param args Argumentos de la línea de comandos (no utilizados en este programa).
+     @param args Argumentos de la linea de comandos (no utilizados en este programa).
     */
 	public static void main(String[] args) {	
 		Inicio partida = new Inicio();		
