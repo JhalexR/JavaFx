@@ -22,7 +22,7 @@ public class Juego {
 	}
 	
     /**
-    Método que llena la tabla de letras con cada letra del alfabeto espanol 
+    Metodo que llena la tabla de letras con cada letra del alfabeto espanol 
     y su traduccion correspondiente en codigo Morse.
    */
 	public void llenarTablaLetras () {
