@@ -47,7 +47,7 @@ public class Jugador extends Inicio {
 		}
 	}
 	
-    /*
+    /**
       Metodo principal referente al jugador.
       comienza la partida: Muestra la tabla de letras y su codigo morse
       Inicia el conteo regresivo de 60 segundos
