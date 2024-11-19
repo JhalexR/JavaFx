@@ -20,7 +20,7 @@ public class Jugador extends Inicio {
 		
 	Scanner scanner = new Scanner(System.in);
 	
-	/*
+	/**
 	  Metodo Constructor de la clase Jugador.
 	  Inicializa los atributos segundos, el puntaje, el codigo morse y las listas de letras y palabras.
 	  @param letrasM Matriz con las letras y sus codigos Morse.
